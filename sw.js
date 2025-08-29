@@ -7,8 +7,8 @@ const FILES_TO_CACHE = [
   "/script.js",
   "/style.css",
   "/manifest.json",
-  "/pfp.1.jpg",
-  "/pfp.2.jpg",
+  "/logoooooo.jpg",
+  "/ohh anooo.jpg",
   "/favicon.png"
 ];
 
@@ -48,4 +48,5 @@ self.addEventListener("fetch", (event) => {
   );
 
 });
+
 
