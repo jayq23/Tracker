@@ -7,15 +7,16 @@
   "theme_color": "#4CAF50",
   "icons": [
     {
-      "src": "logoooooo.jpg",
-      "sizes": "192x192",
+      "src": "loko.jpg",
+      "sizes": "500x500",
       "type": "image/jpeg"
     },
     {
       "src": "ohh anooo.jpg",
-      "sizes": "1000x1000",
+      "sizes": "3000x3000",
       "type": "image/jpeg"
     }
   ]
 }
+
 
