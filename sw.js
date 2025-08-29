@@ -3,9 +3,9 @@
 const CACHE_NAME = "expense-tracker-v1";
 const FILES_TO_CACHE = [
   "/",
-  "/track.html",
-  "/track.js",
-  "/track.css",
+  "/index.html",
+  "/script.js",
+  "/style.css",
   "/manifest.json",
   "/pfp.1.jpg",
   "/pfp.2.jpg"
@@ -45,4 +45,5 @@ self.addEventListener("fetch", (event) => {
       return cachedResponse || fetch(event.request);
     })
   );
+
 });
