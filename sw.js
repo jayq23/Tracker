@@ -1,6 +1,6 @@
 // sw.js
 
-const CACHE_NAME = "expense-tracker-v1";
+const CACHE_NAME = "expense-tracker-v2";
 const FILES_TO_CACHE = [
   "/",
   "/index.html",
@@ -8,7 +8,8 @@ const FILES_TO_CACHE = [
   "/style.css",
   "/manifest.json",
   "/pfp.1.jpg",
-  "/pfp.2.jpg"
+  "/pfp.2.jpg",
+  "/favicon.png"
 ];
 
 // Install event - cache files
@@ -47,3 +48,4 @@ self.addEventListener("fetch", (event) => {
   );
 
 });
+
