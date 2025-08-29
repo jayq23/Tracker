@@ -41,7 +41,7 @@ function checkMonthlyReset() {
     expenseList.innerHTML = "";
     updateSummary();
     
-    console.log(`Monthly reset! Balance carried over: ₱${balance.toFixed(2)}`);
+    console.log(`Monthly reset! Balance carried over: \u20B1${balance.toFixed(2)}`);
   }
 }
 // Render saved data on load
@@ -95,7 +95,7 @@ function addToList(entry, index) {
   // Create content div
   const contentDiv = document.createElement("div");
   contentDiv.className = "expense-content";
-  contentDiv.textContent = `[${entry.date}] ${entry.description}: ₱${entry.amount.toFixed(2)}`;
+  contentDiv.textContent = `[${entry.date}] ${entry.description}: \u20B1${entry.amount.toFixed(2)}`;
 
   // Create delete button
   const deleteBtn = document.createElement("button");
@@ -149,4 +149,5 @@ function refreshList() {
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js")
     .then(() => console.log("Service Worker registered"));
+
 }
