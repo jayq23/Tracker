@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4CAF50">
+
+</head>
+<body>
+  <h1>Expense Tracker</h1>
+
+  <!-- Expense Input Form -->
+  <form class="expense-form">
+    <input type="text" class="expense-input" placeholder="Description (e.g., Lunch, Commute)" required>
+    <input type="number" class="amount-input" placeholder="Amount" required>
+    
+    <!-- Date input -->
+    
+    
+    <select class="type-input" required>
+      <option value="" disabled selected>Type</option>
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+    <button class="add-expense-btn" type="submit">Add</button>
+  </form>
+
+  <!-- Expense Summary -->
+  <div class="summary">
+    <p>Total Balance: &#8369;<span id="balance">0</span></p>
+    <p>Total Income: &#8369;<span id="income">0</span></p>
+    <p>Total Expense: &#8369;<span id="expense">0</span></p>
+  </div>
+
+  <!-- Expense List -->
+  <ul class="expense-list">
+    </li>
+  </ul>
+  <p class="footer">Created by Jay</p>
+  <script src="script.js"></script>
+  <script src="sw.js"></script>
+</body>
+</html>
