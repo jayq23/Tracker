@@ -110,9 +110,9 @@ function addToList(entry, index) {
 }
 
 function updateSummary() {
-  balanceEl.textContent = balance.toFixed(2);
-  incomeEl.textContent = income.toFixed(2);
-  expenseEl.textContent = expense.toFixed(2);
+  balanceEl.textContent = `\u20B1${balance.toFixed(2)}`;
+  incomeEl.textContent = `\u20B1 ${income.toFixed(2)}`;
+  expenseEl.textContent = `\u20B1${expense.toFixed(2)}`;
 }
 
 // Delete functionality
@@ -151,3 +151,4 @@ if ("serviceWorker" in navigator) {
     .then(() => console.log("Service Worker registered"));
 
 }
+
